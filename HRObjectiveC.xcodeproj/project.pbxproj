@@ -16,6 +16,7 @@
 		E8EB104B2147A4810023CBC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB104A2147A4810023CBC1 /* main.m */; };
 		E8EB10552147A4810023CBC1 /* HRObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB10542147A4810023CBC1 /* HRObjectiveCTests.m */; };
 		E8EB10602147A4810023CBC1 /* HRObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB105F2147A4810023CBC1 /* HRObjectiveCUITests.m */; };
+		E8EB106F2147A4F70023CBC1 /* SimpleTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EB106E2147A4F70023CBC1 /* SimpleTextEditor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		E8EB105B2147A4810023CBC1 /* HRObjectiveCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HRObjectiveCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EB105F2147A4810023CBC1 /* HRObjectiveCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRObjectiveCUITests.m; sourceTree = "<group>"; };
 		E8EB10612147A4810023CBC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8EB106D2147A4F70023CBC1 /* SimpleTextEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTextEditor.h; sourceTree = "<group>"; };
+		E8EB106E2147A4F70023CBC1 /* SimpleTextEditor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTextEditor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				E8EB10492147A4810023CBC1 /* Info.plist */,
 				E8EB104A2147A4810023CBC1 /* main.m */,
 				E8EB10412147A47F0023CBC1 /* HRObjectiveC.xcdatamodeld */,
+				E8EB106D2147A4F70023CBC1 /* SimpleTextEditor.h */,
+				E8EB106E2147A4F70023CBC1 /* SimpleTextEditor.m */,
 			);
 			path = HRObjectiveC;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8EB106F2147A4F70023CBC1 /* SimpleTextEditor.m in Sources */,
 				E8EB103D2147A47F0023CBC1 /* ViewController.m in Sources */,
 				E8EB10432147A47F0023CBC1 /* HRObjectiveC.xcdatamodeld in Sources */,
 				E8EB104B2147A4810023CBC1 /* main.m in Sources */,
@@ -437,7 +443,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HRObjectiveC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,6 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.antandbuffalo..HRObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -453,7 +461,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HRObjectiveC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.antandbuffalo..HRObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
